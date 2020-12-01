@@ -1,1 +1,40 @@
-new text
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// printing something
+	fmt.Println("Hello, playground")
+	// for loop
+	for i := 1; i <= 5; i++ {
+		fmt.Println(i)
+	}
+	
+	//if - else
+	for i := 1; i <= 10; i++ {
+		if i % 2 == 0 {
+			fmt.Println("even")
+		} else {
+			fmt.Println("odd")
+		}
+	}
+	
+	// array, n is the size, must be a constant
+	const n int = 5
+	var ara[n] int
+	for i := 0; i < n; i++ {
+		ara[i] = i + 100
+	}
+	for i := 0; i < n; i++ {
+		fmt.Println(i, ara[i])
+	}
+	
+	//slices
+	var a[] int
+	for i := 1; i <= 10; i++ {
+		a = append(a, i)
+	}
+	fmt.Println(a)
+}
